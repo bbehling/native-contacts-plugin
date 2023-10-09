@@ -5,9 +5,9 @@ import Capacitor
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitorjs.com/docs/plugins/ios
  */
-@objc(ContactsPluginsPlugin)
-public class ContactsPluginsPlugin: CAPPlugin {
-    private let implementation = ContactsPlugins()
+@objc(ContactsPluginPlugin)
+public class ContactsPluginPlugin: CAPPlugin {
+    private let implementation = ContactsPlugin()
 
     @objc func echo(_ call: CAPPluginCall) {
         let value = call.getString("value") ?? ""
